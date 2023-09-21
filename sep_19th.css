@@ -1,0 +1,96 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#eg1 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 20px;
+  left: 100px;
+  /* position:static; */
+  /**default is static**/
+  background-color: rgb(193, 135, 63);
+}
+#wahtsapp-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25d366;
+  position: fixed;
+  bottom: 20px;
+  /* give the top,b,l,r accordingto viewport */
+  right: 50px;
+}
+#nav {
+  background-color: bisque;
+  color: blueviolet;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0px; /*as i gave this it will display on top*/
+  width: 100%;
+}
+#nav img span button {
+  padding: 10px;
+}
+#nav > button {
+  border-radius: 9px;
+  font-size: 30px;
+  border: none;
+  background-color: cyan;
+}
+#nav1 {
+  /* using of sticky and importance of top */
+  background-color: bisque;
+  color: blueviolet;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: sticky;
+  /* top:100px;  */
+  top: 0px;
+  width: 100%;
+}
+/* idf the parent is not mentioned relative it follows the body (viewport) */
+#box-1 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: black;
+}
+/* using the box-2 which is the child property
+need to position absolute where it follows the parent
+ */
+#box-2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(214, 235, 105);
+}
+#box-3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(63, 75, 252);
+}
+#box-4 {
+  width: 300px;
+  height: 300px;
+  background-color: aquamarine;
+  /* overflow:hidden; */
+  /* overflow:visible; by default */
+  /* overflow:scroll; */
+  /* overflow-x:scroll; */
+  /* overflow-y:hidden; */
+  overflow: clip;
+  /* clip is similar to hidden but it 
+  doesn't show the scrollbars in any browser */
+}
