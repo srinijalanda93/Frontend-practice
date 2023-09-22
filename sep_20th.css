@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-family: candara;
+  text-align: center;
+  text-shadow: 0px 0px 10px black;
+}
+#component-1 {
+  background-color: rgb(228, 244, 150);
+  border-radius: 10px;
+  box-shadow: 5px 4px 20px black;
+  display: flex;
+  flex-direction: row; /*default*/
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  padding: 50px;
+  align-items: center;
+  width: 500px;
+  margin-left: 40px;
+}
+#component-1 > p {
+  width: 200px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+#component-1 > img {
+  border-radius: 10px;
+}
+/*revision the flex properties*/
+#parent-box {
+  margin-top: 50px;
+  border-radius: 50px;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(239, 191, 94);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: flex-end;/*flex-start,center,stretch(default) the flex item according to parent width try once removing the child height */
+  flex-wrap: wrap-reverse;
+}
+/* usage of flex shorthand take width of the partent container according to the value given to them ignore there own width size**/
+/** for the below code for the parent contaier i am giving 1:2:3:4*/
+/** won't work the flex-wrap property instead 
+ using order which is used to rank*/
+#child-1 {
+  flex: 1;
+  order: 3;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(110, 110, 239);
+}
+#child-2 {
+  flex: 2;
+  order: 1;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(109, 233, 95);
+}
+#child-3 {
+  flex: 3;
+  order: 4;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(247, 107, 184);
+}
+#child-4 {
+  flex: 4;
+  order: 1;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(116, 224, 240);
+}
