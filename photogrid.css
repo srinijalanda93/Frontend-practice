@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#animal-photos {
+  width: 60vw;
+  height: 100vh;
+  background-color: #444444;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 290px);
+  gap: 20px;
+  grid-template-areas:
+    "h h h"
+    "p1 p1 p1"
+    "p12 p12 p12"
+    "p13 p13 p13";
+  padding: 0px 0px 0px 15px;
+  overflow: hidden;
+}
+#animal-photos > h1 {
+  grid-area: h;
+  text-transform: uppercase;
+  text-align: center;
+}
+#animal-photos > img {
+  border-radius: 12px;
+}
