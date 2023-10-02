@@ -1,0 +1,104 @@
+/* .box{
+    background-color:blueviolet;
+    width:300px;
+    height:300px;
+    transition: width 5s ease 2s;  
+}
+.box:hover{
+    width:900px;
+    background-color:rgb(243, 169, 116);
+}
+.box1{
+    background-color:rgb(184, 142, 223);
+    width:300px;
+    height:300px;
+    transition: width 1s ease,height 10s ease;
+}
+.box1:hover{
+    width:900px;
+    height:500px;
+    background-color:rgb(224, 106, 22);
+}
+.box1{
+    background-color:rgb(184, 142, 223);
+    width:300px;
+    height:300px;
+    transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.box1:hover{
+    width:900px;
+    height:500px;
+    background-color:rgb(224, 106, 22);
+} */
+.box2 {
+  background-color: chocolate;
+  width: 300px;
+  height: 300px;
+  transition: background-color 5s ease;
+}
+.box2:hover {
+  background-color: rgb(210, 30, 42);
+}
+.btn {
+  border: none;
+  background-color: brown;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(247, 247, 252);
+  font-size: 30px;
+  cursor: pointer;
+  transition: opacity 1s linear, color 2s linear;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: black;
+}
+.btn:active {
+  opacity: 0.3;
+}
+.box-3 {
+  background-color: blueviolet;
+  width: 300px;
+  height: 300px;
+  border: 10px solid green;
+  transition: border-color 3s ease 4s;
+}
+.box-3:hover {
+  border-color: hotpink;
+}
+.box-4 {
+  background-color: blueviolet;
+  width: 300px;
+  height: 300px;
+  border: 10px solid green;
+  transition: border-color 1s ease 1s, background-color 1s linear,
+    width 1s ease-in, height 1s ease-out;
+}
+.box-4:hover {
+  background-color: rgb(51, 48, 228);
+  width: 500px;
+  height: 600px;
+  border-color: hotpink;
+}
+.text{
+    font-size:60px;
+    font-weight:900;
+    color:blueviolet;
+    transition:all 2s ease;
+}
+.text:hover{
+    font-size:20px;
+    font-weight:400;
+    color:rgb(26, 13, 14);
+   
+}
+.box-5{
+    width:300px;
+    height:300px;
+    background-color: blanchedalmond;
+    box-shadow:0px 3px 3px blue;
+    transition:box-shadow 2s ease ;
+}
+.box-5:hover{
+    box-shadow:10px 13px 30px rgb(215, 74, 95);
+}
